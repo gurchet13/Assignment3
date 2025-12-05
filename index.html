@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather API Demo</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather API Demo — OpenWeatherMap</h1>
+
+    <form id="searchForm">
+      <label for="city">City name:</label>
+      <input id="city" name="city" type="text" placeholder="e.g. Toronto" required />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <section id="results" class="hidden">
+      <h2 id="place"></h2>
+      <div id="current">
+        <p><strong>Temperature:</strong> <span id="temp"></span> °C</p>
+        <p><strong>Weather:</strong> <span id="desc"></span></p>
+        <p><strong>Feels like:</strong> <span id="feels"></span> °C</p>
+        <p><strong>Humidity:</strong> <span id="hum"></span>%</p>
+        <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+        <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+        <img id="icon" alt="weather icon" />
+      </div>
+
+      <h3>Next 5 forecast entries (3-hour steps)</h3>
+      <ul id="forecastList"></ul>
+    </section>
+
+    <p id="error" class="error"></p>
+    <footer>
+      <p>API: OpenWeatherMap — Documentation link in README.</p>
+    </footer>
+  </main>
+
+  <script src="js/config.example.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
