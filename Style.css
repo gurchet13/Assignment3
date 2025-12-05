@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 14px;
+    background: #0077ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0059c9;
+}
+
+#error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#current img {
+    width: 70px;
+    height: 70px;
+}
+
+#forecastList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#forecastList li {
+    background: #eef4ff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
